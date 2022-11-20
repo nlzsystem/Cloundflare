@@ -5,7 +5,7 @@
 addEventListener(  
 &emsp;&emsp;"fetch",event => {  
 &emsp;&emsp;&emsp;&emsp;let url=new URL(event.request.url);  
-&emsp;&emsp;&emsp;&emsp;url.hostname="xx.herokuapp.com";   
+&emsp;&emsp;&emsp;&emsp;url.hostname="";   
 &emsp;&emsp;&emsp;&emsp;let request=new Request(url,event.request);  
 &emsp;&emsp;&emsp;&emsp;event. respondWith(  
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;fetch(request)  
